@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+    {{product.artist}}<br/>
+    {{product.album}}<br/>
+    {{product.year}}<br/>
+
+    <img class="img_1" src="{{product.cover}}">
+    <br class="price"><b>{{ product.price }}</b></br>
+    {{product.description}}<br/>
+
+{% endblock content %}

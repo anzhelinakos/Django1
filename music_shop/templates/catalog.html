@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %} 
+    {% for product in products %}
+        <table>
+            <tr>
+                <td><a>  <img class="img_1" src="{{product.cover}}"> </a></td>
+                <td><a>{{product.artist}}</a> </td>
+                <td><a href="{{ Product.get_absolute_url }}">{{product.album}}</a> </td>
+                <td><a>{{product.price}}</a> </td>
+
+            </tr>
+        </table>
+    {% endfor %}
+{% endblock content %}

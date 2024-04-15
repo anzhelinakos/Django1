@@ -1,0 +1,72 @@
+{% load static %}
+
+<html lang="en" class="color_scheme">
+<head>
+	<meta charset="utf-8">	
+	<title>
+		Provinil			
+	</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}" type="text/css">
+	<script type="text/javascript" src="{% static 'shop.js' %}"></script>
+	<script type="text/javascript" src="{% static 'currency-tools.js' %}"></script>
+</head>
+
+<body class="template-index scheme_1">	
+<header id="page_header">
+	<div class="page_container">
+		<div class="top_pannel " > 
+			<div class="container-fluid"> 
+				<div class="top_pannel_text">Order online or call us 375(29) 000 0000</div>
+
+                <div class="header_account">
+					<a href="/accounts/login/" title="My account"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    <a href="cart/detail.html" title="basket"><i><img src="/static/img/base/basket.jpg" width="18" height="18"> </i></a>
+                </div>                                                                                                        
+
+            </div>          
+        </div>
+		<form action="/search" method="get" role="search" class="search_form open" style="display: block;">
+								<input type="search" name="q" placeholder="Search" aria-label="Search">
+
+								<button type="submit">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+        <div class="header_wrap1">
+			<div class="container-fluid header_main_wrap">
+				<div class="header_wrap2 header_left">
+								<a class="header_logo" href="/home/">
+									<img src="//theme508-vinyl.myshopify.com/cdn/shop/files/logo_300x_crop_center@2x.png?v=1614290191" alt="Provinil">
+								</a>
+				</div>
+
+				<div class="header_wrap2 header_center">
+						<nav id="megamenu" class="megamenu megamenu_desktop">
+							<ul id="megamenu_level__1" class="level_1 sf-js-enabled sf-arrows">
+									<li class="level_1__item level_2__small">
+										<a class="level_1__link active sf-with-ul" href="/home/">Home
+											<i class="level_1__trigger megamenu_trigger" data-submenu="menu_1524227640085"></i>
+										</a>
+									</li>
+									<li class="level_1__item level_2__links">
+										<a class="level_1__link sf-with-ul" href="/products/">Catalog
+											<i class="level_1__trigger megamenu_trigger" data-submenu="menu_1524467474031"></i>
+										</a>
+
+									<li class="level_1__item">
+										<a class="level_1__link " href="/about_us/">Contact Us
+										</a>
+									</li>
+							</ul>
+						</nav>
+				</div>
+			</div>
+		</div>
+    </div>   
+</header>
+</body>
+    <div>{% block content %}{% endblock content %}</div>
+
+
+</html>

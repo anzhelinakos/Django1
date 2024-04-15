@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div class="page_content__block page_content__text">
+    <h2 class="block_title"></h2>
+    <div class="block_content rte">
+        <p>Связаться с нами можно используя моюильный телефон в шапке сайта, через социальные сети, а так же с помощью формы обратной связи </p>
+    </div>
+</div>
+
+<form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form" onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;contact&quot;); return false;"><input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
+
+
+
+
+				<div class="form-group">
+					<input required="" type="text" id="contact_form__name" name="contact[name]" value="" placeholder="Name">
+				</div>
+
+				<div class="form-group">
+					<input required="" type="email" id="contact_form__email" name="contact[email]" value="" placeholder="Email">
+				</div>
+
+				<div class="form-group">
+					<textarea required="" id="contact_form__message" name="contact[body]" placeholder="Message"></textarea>
+				</div>
+
+				<div class="form-group">
+					<button class="btn" type="submit">Submit</button>
+				</div>
+			</form>
+
+
+
+{% endblock content %}

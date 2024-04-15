@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+{% block content %}
+<form action="{% url "search" %}" method="GET">
+    <input type="text" name="q" />
+    <button type="submit">search</button>
+</form>
+<!--> Сюда можно включить шаблон с результатами через include
+      Или выделить для него отдельный блок <-->
+{% include "template/result_template.html" %}
+{% endblock %}
